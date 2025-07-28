@@ -37,3 +37,13 @@ Em cada uma, defina a constante metadata (usando o tipo Metadata do Next.js).
 Configure o title com o nome da página seguido de | PetShop. Ex: "Contato | PetShop".
 Configure o description com um resumo curto da página. Ex: "Entre em contato conosco".
 Para visualizar as páginas, simplesmente acesse localhost:3000/nome_da_pagina
+
+```
+
+
+## 03_componentes-cabecalho-menu-e-modulos-de-estilo
+- Criação de componentes Cabecalho e Menu
+- Definição de link ativo no menu utilizando o hook usePathname
+- Ativação a renderização de componente em modo cliente com use client
+- Importação e aplicação de módulos CSS
+```
