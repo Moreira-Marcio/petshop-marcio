@@ -13,6 +13,13 @@ Projeto de uma aplicação web SPA usando Next.js, Typescript e Supabase (Baas -
 
 ´´´´´
 
+## 02_paginas-basicas-liks-ajustes-de-layout-e-metadados
+
+- Criação de paginas/rotas (usando pastas e arquivos)
+- Definição de metadados especificos para cada pagina
+- Adição do componente `<link>` para navegação entre as rotas
+- Ajustes diversos de estrutura HTML
+
 ## Exercícios
 
 Página inicial (src/app/page.tsx)
