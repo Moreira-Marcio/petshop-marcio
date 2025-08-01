@@ -8,13 +8,14 @@ type ListaPostsProps = {
 
 //src/components/ListaPosts.tsx
 export default function ListaPosts({ posts }: ListaPostsProps) {
-  console.log(posts);
   return (
     <div className={estilos.posts}>
-      <article>
-        <h3>titulo post</h3>
-        <p>subtitulo post</p>
-      </article>
+      {posts.map((post) => (
+        <article key={post.id}>
+          <h3>{post.titulo}</h3>
+          <p>{post.subtitulo}</p>
+        </article>
+      ))}
     </div>
   );
 }
