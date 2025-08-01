@@ -1,11 +1,10 @@
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import { Roboto, Fjalla_One } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-import Cabecalho from "@/componentes/cabecalho";
+import Cabecalho from "@/components/Cabecalho";
 
-/*Configura variaveis para as fontes */
-
+/* Configura variáveis para as fontes */
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -22,12 +21,12 @@ const fjallaOne = Fjalla_One({
 
 export const metadata: Metadata = {
   title: "PetShop",
-  description: "Mini portal do PetShop com noticias,",
-  keywords: ["petshop", "animais", "cuidados", "caes", "gatos"],
+  description: "Mini portal do PetShop com notícias, produtos e muito mais",
+  keywords: ["petshop", "animais", "cachorros", "gatos"],
   authors: [
     {
-      name: "Marcio",
-      url: "https://github.com/Moreira-Marcio",
+      name: "Tiago",
+      url: "https://github.com/tiagotecinternet24",
     },
   ],
 };
@@ -41,7 +40,6 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={`${roboto.variable} ${fjallaOne.variable}`}>
         <Cabecalho />
-
         <main className="limitador">{children}</main>
       </body>
     </html>

@@ -1,24 +1,37 @@
-import type { Metadata } from "next";
+// src/app/sobre/page.tsx
+import Container from "@/components/Container";
+import estilos from "./sobre.module.css";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Sobre | PetShop",
-  description: "Conheça nossa PetShop",
-  keywords: ["petshop", "animais", "cuidados", "caes", "gatos,quem somos"],
+  description: "Missão, visão e valores...",
 };
 
 export default function Sobre() {
   return (
-    <section>
-      <h2>
-        <b>Conheça nossa PetShop</b>
-      </h2>
-
-      <p>
-        Somos apaixonados por pets e dedicados a oferecer cuidado de qualidade e
-        com carinho. No nosso petshop, seu animalzinho é tratado como parte da
-        família. Com amor, experiência e responsabilidade, cuidamos do bem-estar
-        do seu melhor amigo.
-      </p>
+    <section className={estilos.conteudo}>
+      <h2>Sobre</h2>
+      <Container>
+        <h3>Missão</h3>
+        <p>
+          Nossa missão é proporcionar o melhor cuidado e bem-estar para os
+          animais de estimação, oferecendo produtos e serviços de alta qualidade
+          que atendam às necessidades dos nossos clientes e seus pets.
+        </p>
+        <h3>Visão</h3>
+        <p>
+          Nossa visão é ser reconhecida como a principal referência em cuidados
+          para animais de estimação, promovendo a saúde, felicidade e
+          longevidade dos nossos amigos de quatro patas.
+        </p>
+        <h3>Valores</h3>
+        <p>
+          Nossos valores incluem amor pelos animais, compromisso com a
+          qualidade, respeito ao meio ambiente e dedicação ao atendimento ao
+          cliente.
+        </p>
+      </Container>
     </section>
   );
 }

@@ -1,19 +1,10 @@
+// src/app/page.tsx
+import estilos from "./page.module.css";
 export default function Home() {
   return (
-    <>
-      <p>Conteudo do PetShop</p>
-      <section>
-        <h2>Pet Noticias</h2>
-        <p>
-          <b>Chihuahua de 23 anos se torna o cão mais idoso do Mundo</b>
-        </p>
-        <p>
-          Conheça o cachorro mais velho do Mundo: Spike, um Chihuahua de 23
-          anos, adotado por uma família amorosa quando já tinha seus 10 anos de
-          idade. Veja algumas dicas de como fazer seu peludo atingir a
-          longevidade assim como o Spike!
-        </p>
-      </section>
-    </>
+    <section className={estilos.conteudo}>
+      <h2>Pet Notícias</h2>
+      <p>Texto qualquer da página inicial....</p>
+    </section>
   );
 }

@@ -1,30 +1,26 @@
-import type { Metadata } from "next";
+// src/app/contato/page.tsx
+import Container from "@/components/Container";
+import estilos from "./contato.module.css";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contato | PetShop",
-  description: "Fale conosco",
-  keywords: [
-    "petshop",
-    "animais",
-    "cuidados",
-    "caes",
-    "gatos,banho e tosa, ração,veterinatio, fale conosco",
-  ],
+  description: "Fale conosco...",
 };
 
 export default function Contato() {
   return (
-    <section>
-      <h2>
-        <b>Fale conosco</b>
-      </h2>
+    <section className={estilos.conteudo}>
+      <h2>Contato</h2>
+      <Container>
+        <p>
+          Você pode nos enviar um e-mail para{" "}
+          <a href="mailto:contato@petshop.com">contato@petshop.com</a> ou nos
+          ligar pelo telefone <a href="tel:+5511999999999">+55 11 99999-9999</a>
+        </p>
 
-      <p>
-        telefones: (11) 1234-5678 Loja Principal <br />
-        (11) 98765-4321 Suporte ao Cliente <br />
-        whatssap: (11) 91234-5678 Atendimento Rápido <br />
-        e-mail: atendimento@seupetshop.com.br Dúvidas e Orçamentos
-      </p>
+        <p>Se preferir, use o formulário abaixo:</p>
+      </Container>
     </section>
   );
 }
