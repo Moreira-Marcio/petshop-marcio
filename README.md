@@ -40,10 +40,20 @@ Para visualizar as páginas, simplesmente acesse localhost:3000/nome_da_pagina
 
 ```
 
-
 ## 03_componentes-cabecalho-menu-e-modulos-de-estilo
 - Criação de componentes Cabecalho e Menu
 - Definição de link ativo no menu utilizando o hook usePathname
 - Ativação a renderização de componente em modo cliente com use client
 - Importação e aplicação de módulos CSS
+```
+
+## 04_melhorias-nas-paginas-e-componente-container
+
+- adção de conteudo às pages (sobre,produto,contato)
+- utilização de imagem svg na page not found
+- criação e aplicação de componente container usando children
+- desativação do compilador turbopack para evitar bugs de cache (em especial quando alguns modulos css)
+
+```
+
 ```
