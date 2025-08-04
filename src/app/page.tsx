@@ -5,21 +5,21 @@ import arrayPosts from "@/data/array-posts";
 import { Post } from "@/types/Post";
 
 export default async function Home() {
-  const resposta = await fetch(`http://localhost2112/posts`, {
+  //revalidamos o cache do next a cada requisição para garantir que os dados estejam sempre atualizados
+  const resposta = await fetch(`http://localhost:2112/posts`, {
     next: { revalidate: 0 },
   });
   if (!resposta.ok) {
     throw new Error("Erro ao buscar os posts: " + resposta.statusText);
   }
 
-  const posts: Post = await resposta.json();
-  console.log(posts);
+  const posts: Post[] = await resposta.json();
 
   return (
     <section className={estilos.conteudo}>
       <h2>Pet Notícias</h2>
-      <p>Aqui você encontra as ulytimas noticias sobre pets</p>
-      <ListaPosts posts={arrayPosts} />
+      <p>Aqui você encontra as ultimas noticias sobre pets</p>
+      <ListaPosts posts={posts} />
     </section>
   );
 }

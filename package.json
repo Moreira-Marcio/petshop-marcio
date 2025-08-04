@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "api": "json-server --watch db.json --port 2112 --host 0.0.0.0q"
+    "api": "json-server --watch db.json --port 2112 --host 0.0.0.0"
   },
   "dependencies": {
     "next": "15.4.4",
