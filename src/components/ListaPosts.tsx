@@ -8,7 +8,7 @@ type ListaPostsProps = {
 };
 
 //src/components/ListaPosts.tsx
-export default function ListaPosts({ posts }: ListaPostsProps) {
+export default async function ListaPosts({ posts }: ListaPostsProps) {
   return (
     <div className={estilos.posts}>
       {posts.map((post) => (
