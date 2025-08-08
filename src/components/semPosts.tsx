@@ -1,6 +1,6 @@
 //src/components/semPosts.tsx
 import Container from "./Container";
-import estilos from "../styles/semPosts.module.css";
+import estilos from "./SemPosts.module.css";
 
 export default function SemPosts() {
   return (
