@@ -68,12 +68,21 @@ Para visualizar as páginas, simplesmente acesse localhost:3000/nome_da_pagina
 
 ## 06_fake-api-usando-json-server-rota-dinamica
 
-- instalaçao e configuração do `jason-server` como dependencia de  desenvolvedor
-desenvolvedor: parainstalar `npm install json-server --save-dev`
-- utilização de `fetch` com  `async/awit` na pagina home para consumiir os posts da fake-api
+- instalaçao e configuração do `jason-server` como dependencia de desenvolvedor
+  desenvolvedor: parainstalar `npm install json-server --save-dev`
+- utilização de `fetch` com `async/awit` na pagina home para consumiir os posts da fake-api
 
 - substitui array fixo por posts de dados da fake-api
 - configuração de rota dinamica com carregamento de dados a partir de parametro da rota
 - uso de `promise` com tipo para prop `params
 - geração de meta-dados dinamicos usando a função `generateMatadata`
 - refatorção da programação de burca de dados na fake-api usando ua funçao dedicada (buscarPorId)
+
+## 07_componentes-SemPosts-e-notFound-da-rota-de-posts
+
+- Criação do componente SemPosts.tsx e aplicação de renderização condicional na page Home
+- Criação da page not-found.tsx e aplicação na rota dinâmica de posts usando verificação de erro status 404 e chamada da função notFound()
+
+´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´
+
+##
